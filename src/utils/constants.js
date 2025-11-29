@@ -1,0 +1,1 @@
+export const PLAY_STORE_URL = import.meta.env.VITE_PLAY_STORE_URL;
