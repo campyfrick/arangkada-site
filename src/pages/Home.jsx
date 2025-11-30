@@ -1,30 +1,27 @@
 import React from "react";
-import { Title, Text, Button, Group, Stack, Card } from "@mantine/core";
-import { PLAY_STORE_URL } from "../utils/constants";
-import { Link } from "react-router-dom";
+import { Title, Text, Button, Group, Stack, Card, Flex } from "@mantine/core";
+import { VITE_PLAY_STORE_URL } from "../utils/constants";
 
 export default function Home() {
   return (
-    <Stack align="center" mt={40}>
-      <Title order={1} ta="center">
-        Arangkada
+    <Stack align="center" justify="center" w="100%" h="auto" p="md" gap="lg">
+      <Title order={1} ta="center" size={36}>
+        Master the LTO Written Exam with Confidence
       </Title>
-      <Text size="lg" c="dimmed" ta="center" maw={500}>
-        A simple companion app to help communities move forward — connect with
-        people, find local resources, and grow together.
+      <Text size="lg" ta="center" maw={500}>
+        Arangkada helps you prepare for your LTO Driver’s License Exam with
+        confidence. Learn everything you need to pass — from road signs and
+        markings to traffic rules, penalties, and safe driving practices.
       </Text>
-
-      <Group mt="lg">
-        <Button
-          component="a"
-          href={PLAY_STORE_URL}
-          target="_blank"
-          variant="default"
-          size="md"
-        >
-          Get it on Google Play
-        </Button>
-      </Group>
+      <Button
+        component="a"
+        href={VITE_PLAY_STORE_URL}
+        target="_blank"
+        variant="default"
+        size="sm"
+      >
+        Get the App on Google Play
+      </Button>
     </Stack>
   );
 }
