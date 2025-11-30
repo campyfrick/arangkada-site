@@ -8,9 +8,12 @@ import Privacy from "./pages/Privacy";
 import Contact from "./pages/Contact";
 
 export default function App() {
+
   return (
     <AppShell padding="lg" header={{ height: 90 }} withBorder={false}>
-      <AppShell.Header p="xl">
+      <AppShell.Header
+        p="xl"
+      >
         <Navbar />
       </AppShell.Header>
       <AppShell.Main w="100%" h="auto">
